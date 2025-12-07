@@ -1,12 +1,20 @@
-/* 1. Global Font Import (MUST be at the top) */
+/* src/index.css - THE COMPLETE AND CORRECT FILE */
+
+/* 1. Global Font Import (MUST be at the top to avoid build warnings) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
 
-/* 2. Tailwind Directives (MUST come after @import) */
+/* 2. Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 3. Global custom classes */
+/* 3. Global custom classes (Consolidated from app.jsx) */
 .font-arabic {
   font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+/* Ensure the Arabic text is always right-to-left within its container */
+.dir-rtl {
+    direction: rtl;
+    text-align: right;
 }
