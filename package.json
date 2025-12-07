@@ -13,8 +13,9 @@
     "deploy:web": "vercel deploy --prod"
   },
   "dependencies": {
-    "express": "^4.19.2",
     "@google/generative-ai": "^0.15.0",
+    "express": "^4.19.2",
+    "lucide-react": "^0.556.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
