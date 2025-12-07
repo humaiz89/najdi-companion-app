@@ -4,7 +4,7 @@ import { Copy, RefreshCw, Wand2, ArrowRightLeft, Eraser, Check, Volume2, BookOpe
 
 // Helper function to call the secure backend proxy
 const secureGeminiCall = async (task, payload) => {
-  const response = await fetch('/api/gemini', { // The new secure endpoint
+  const response = await fetch('/api', { // The new secure endpoint
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
