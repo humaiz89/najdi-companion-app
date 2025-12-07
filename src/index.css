@@ -1,0 +1,14 @@
+/* 1. Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Global Font Import (Moved from App.jsx for better organization) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
+
+/* 3. Global custom classes (if needed) */
+.font-arabic {
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+/* You can remove the <style> block from app.jsx after this */

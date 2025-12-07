@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Copy, RefreshCw, Wand2, ArrowRightLeft, Eraser, Check, Volume2, BookOpen, Download, LayoutList, MessageCircleQuestion, GraduationCap, X, ChevronRight, RotateCcw, Volume2 as SpeakerIcon } from 'lucide-react';
 
+
 // Helper function to call the secure backend proxy
 const secureGeminiCall = async (task, payload) => {
   const response = await fetch('/api/gemini', { // The new secure endpoint
@@ -891,18 +892,6 @@ const NajdiStudyApp = () => {
         </div>
 
       </div>
-
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
-        .font-arabic {
-          font-family: 'Noto Sans Arabic', sans-serif;
-        }
-        /* Ensure the Arabic text is always right-to-left within its container */
-        .dir-rtl {
-            direction: rtl;
-            text-align: right;
-        }
-      `}</style>
     </div>
   );
 };
